@@ -11,7 +11,6 @@ import UIKit
 final class MainViewController: UIViewController, MainViewControllerProtocol {
     
     var presenter: MainPresenterProtocol!
-    //let configurator: MainConfiguratorProtocol = MainConfigurator()
     
     var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -35,7 +34,6 @@ final class MainViewController: UIViewController, MainViewControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.8724230528, green: 0.9164030552, blue: 0.9663124681, alpha: 1)
-        //configurator.configure(with: self)
         setNavigation()
         getHeroesData()
         setCollectionView()
