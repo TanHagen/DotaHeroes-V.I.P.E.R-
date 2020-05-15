@@ -20,10 +20,8 @@
 		5F3A84FF21ADA01D00308896 /* MainInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A84FE21ADA01D00308896 /* MainInteractorProtocol.swift */; };
 		5F3BD42120EC809A004ADCFC /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3BD42020EC809A004ADCFC /* ExtensionImage.swift */; };
 		5F3BD42320EC8A26004ADCFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3BD42220EC8A26004ADCFC /* DetailViewController.swift */; };
-		5FAA57A620EE73CC008807BB /* DotaHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA57A520EE73CC008807BB /* DotaHeroesTests.swift */; };
 		5FB58E2C20EC57E000541C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB58E2B20EC57E000541C05 /* AppDelegate.swift */; };
 		5FB58E2E20EC57E000541C05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB58E2D20EC57E000541C05 /* MainViewController.swift */; };
-		5FB58E3420EC57E000541C05 /* DotaHeroes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FB58E3220EC57E000541C05 /* DotaHeroes.xcdatamodeld */; };
 		5FB58E3620EC57E400541C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB58E3520EC57E400541C05 /* Assets.xcassets */; };
 		5FB58E3920EC57E400541C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB58E3720EC57E400541C05 /* LaunchScreen.storyboard */; };
 		5FB58E4120EC59BE00541C05 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB58E4020EC59BE00541C05 /* HeroCollectionViewCell.swift */; };
@@ -44,18 +42,7 @@
 		96C695102468A865000DC236 /* API+Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C6950F2468A865000DC236 /* API+Heroes.swift */; };
 		96C695122468A889000DC236 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C695112468A889000DC236 /* APIEndpoint.swift */; };
 		96C695142468A8A5000DC236 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C695132468A8A5000DC236 /* APIError.swift */; };
-		A1EF8E8193A8B2BF9649DE8A /* Pods_DotaHeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812F627D145BC0B63C0CF4BD /* Pods_DotaHeroesTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5FAA57A820EE73CC008807BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5FB58E2020EC57E000541C05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5FB58E2720EC57E000541C05;
-			remoteInfo = DotaHeroes;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A85F0C4A9A5A350FAA079FD /* Pods_DotaHeroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaHeroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,13 +59,9 @@
 		5F3A84FE21ADA01D00308896 /* MainInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorProtocol.swift; sourceTree = "<group>"; };
 		5F3BD42020EC809A004ADCFC /* ExtensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
 		5F3BD42220EC8A26004ADCFC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		5FAA57A320EE73CC008807BB /* DotaHeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotaHeroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAA57A520EE73CC008807BB /* DotaHeroesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesTests.swift; sourceTree = "<group>"; };
-		5FAA57A720EE73CC008807BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FB58E2820EC57E000541C05 /* DotaHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB58E2B20EC57E000541C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB58E2D20EC57E000541C05 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
-		5FB58E3320EC57E000541C05 /* DotaHeroes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotaHeroes.xcdatamodel; sourceTree = "<group>"; };
 		5FB58E3520EC57E400541C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB58E3820EC57E400541C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FB58E3A20EC57E400541C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,14 +90,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5FAA57A020EE73CC008807BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1EF8E8193A8B2BF9649DE8A /* Pods_DotaHeroesTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FB58E2520EC57E000541C05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,25 +158,14 @@
 				5FB58E3520EC57E400541C05 /* Assets.xcassets */,
 				5FB58E3720EC57E400541C05 /* LaunchScreen.storyboard */,
 				5FB58E3A20EC57E400541C05 /* Info.plist */,
-				5FB58E3220EC57E000541C05 /* DotaHeroes.xcdatamodeld */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5FAA57A420EE73CC008807BB /* DotaHeroesTests */ = {
-			isa = PBXGroup;
-			children = (
-				5FAA57A520EE73CC008807BB /* DotaHeroesTests.swift */,
-				5FAA57A720EE73CC008807BB /* Info.plist */,
-			);
-			path = DotaHeroesTests;
 			sourceTree = "<group>";
 		};
 		5FB58E1F20EC57E000541C05 = {
 			isa = PBXGroup;
 			children = (
 				5FB58E2A20EC57E000541C05 /* DotaHeroes */,
-				5FAA57A420EE73CC008807BB /* DotaHeroesTests */,
 				5FB58E2920EC57E000541C05 /* Products */,
 				62F4AB83343B773D194C1F8F /* Pods */,
 				2EEC67F05899408BCE2E22D0 /* Frameworks */,
@@ -212,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				5FB58E2820EC57E000541C05 /* DotaHeroes.app */,
-				5FAA57A320EE73CC008807BB /* DotaHeroesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -373,25 +336,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FAA57A220EE73CC008807BB /* DotaHeroesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5FAA57AC20EE73CC008807BB /* Build configuration list for PBXNativeTarget "DotaHeroesTests" */;
-			buildPhases = (
-				DFDFEDD9DA106B55600A49D9 /* [CP] Check Pods Manifest.lock */,
-				5FAA579F20EE73CC008807BB /* Sources */,
-				5FAA57A020EE73CC008807BB /* Frameworks */,
-				5FAA57A120EE73CC008807BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5FAA57A920EE73CC008807BB /* PBXTargetDependency */,
-			);
-			name = DotaHeroesTests;
-			productName = DotaHeroesTests;
-			productReference = 5FAA57A320EE73CC008807BB /* DotaHeroesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5FB58E2720EC57E000541C05 /* DotaHeroes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FB58E3D20EC57E400541C05 /* Build configuration list for PBXNativeTarget "DotaHeroes" */;
@@ -421,11 +365,6 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Антон Зайцев";
 				TargetAttributes = {
-					5FAA57A220EE73CC008807BB = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
-						TestTargetID = 5FB58E2720EC57E000541C05;
-					};
 					5FB58E2720EC57E000541C05 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
@@ -446,19 +385,11 @@
 			projectRoot = "";
 			targets = (
 				5FB58E2720EC57E000541C05 /* DotaHeroes */,
-				5FAA57A220EE73CC008807BB /* DotaHeroesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5FAA57A120EE73CC008807BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FB58E2620EC57E000541C05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,39 +441,9 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DFDFEDD9DA106B55600A49D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DotaHeroesTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5FAA579F20EE73CC008807BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5FAA57A620EE73CC008807BB /* DotaHeroesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FB58E2420EC57E000541C05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -563,7 +464,6 @@
 				5F2275DC20EC5DE60023AAEC /* HeroesService.swift in Sources */,
 				96C695142468A8A5000DC236 /* APIError.swift in Sources */,
 				96C6950C2468A81F000DC236 /* URLSession+Extensions.swift in Sources */,
-				5FB58E3420EC57E000541C05 /* DotaHeroes.xcdatamodeld in Sources */,
 				96C6950E2468A84B000DC236 /* API.swift in Sources */,
 				5F3A84F221AD9BE100308896 /* MainRouter.swift in Sources */,
 				968BDDBA246B48C30041D0BD /* DetailAssemblyProtocol.swift in Sources */,
@@ -585,14 +485,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		5FAA57A920EE73CC008807BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5FB58E2720EC57E000541C05 /* DotaHeroes */;
-			targetProxy = 5FAA57A820EE73CC008807BB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		5FB58E3720EC57E400541C05 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -605,48 +497,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5FAA57AA20EE73CC008807BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0322211C8DBFFDF551EEA43 /* Pods-DotaHeroesTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AFY8M625WZ;
-				INFOPLIST_FILE = DotaHeroesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = swift.DotaHeroesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaHeroes.app/DotaHeroes";
-			};
-			name = Debug;
-		};
-		5FAA57AB20EE73CC008807BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4487C6B2AAA1742B1A495B2 /* Pods-DotaHeroesTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AFY8M625WZ;
-				INFOPLIST_FILE = DotaHeroesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = swift.DotaHeroesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaHeroes.app/DotaHeroes";
-			};
-			name = Release;
-		};
 		5FB58E3B20EC57E400541C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -802,15 +652,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FAA57AC20EE73CC008807BB /* Build configuration list for PBXNativeTarget "DotaHeroesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5FAA57AA20EE73CC008807BB /* Debug */,
-				5FAA57AB20EE73CC008807BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5FB58E2320EC57E000541C05 /* Build configuration list for PBXProject "DotaHeroes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -830,19 +671,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5FB58E3220EC57E000541C05 /* DotaHeroes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5FB58E3320EC57E000541C05 /* DotaHeroes.xcdatamodel */,
-			);
-			currentVersion = 5FB58E3320EC57E000541C05 /* DotaHeroes.xcdatamodel */;
-			path = DotaHeroes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5FB58E2020EC57E000541C05 /* Project object */;
 }
