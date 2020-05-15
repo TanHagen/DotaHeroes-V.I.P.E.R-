@@ -50,6 +50,10 @@ final class HeroCollectionViewCell: UICollectionViewCell {
         super.init(coder: aDecoder)
     }
     
+    override func prepareForReuse() {
+        heroImage.image = nil
+    }
+    
     func setConstraints() {
         
         self.contentView.addSubview(container)
