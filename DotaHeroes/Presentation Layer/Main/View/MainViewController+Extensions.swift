@@ -12,13 +12,19 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let heroesIndex = heroesArray[indexPath.row]
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroCollectionViewCell.reusableIdentifier, for: indexPath) as! HeroCollectionViewCell
-        cell.heroImage.getImageFrom(link: heroesIndex.imageLink)
-        cell.nameLabel.text = heroesIndex.localizedName
-        
-        return cell
+        if heroesArray.indices.contains(indexPath.row) {
+            
+            let heroesIndex = heroesArray[indexPath.row]
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroCollectionViewCell.reusableIdentifier, for: indexPath) as! HeroCollectionViewCell
+            cell.heroImage.getImageFrom(link: heroesIndex.imageLink)
+            cell.nameLabel.text = heroesIndex.localizedName
+            
+            return cell
+            
+        } else {
+            return UICollectionViewCell()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

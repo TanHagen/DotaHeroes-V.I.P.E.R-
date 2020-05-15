@@ -50,7 +50,8 @@ final class MainViewController: UIViewController, MainViewControllerProtocol {
     }
     
     func getHeroesData() {
-        presenter.getHeroesData { (heroes) in
+        presenter.getHeroesData { [weak self] (heroes) in
+            guard let self = self else { return }
             self.heroesArray = heroes
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
