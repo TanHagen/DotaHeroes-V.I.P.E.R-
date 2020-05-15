@@ -17,8 +17,7 @@ final class MainRouter: MainRouterProtocol {
     }
     
     func goToDetailViewController(hero: Hero) {
-        let detailViewController = DetailAssembly.makeDetailAssembly()
-        detailViewController.updateView(hero: hero)
+        let detailViewController = DetailAssembly.makeDetailAssembly(hero: hero)
         viewController.navigationController?.pushViewController(detailViewController, animated: true)
     }
     

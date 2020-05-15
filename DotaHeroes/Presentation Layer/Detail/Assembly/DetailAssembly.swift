@@ -10,9 +10,9 @@ import Foundation
 
 class DetailAssembly: DetailAssemblyProtocol {
 
-    static func makeDetailAssembly() -> DetailViewController {
+    static func makeDetailAssembly(hero: Hero) -> DetailViewController {
         
-        let viewController = DetailViewController()
+        let viewController = DetailViewController(hero: hero)
         let presenter = DetailPresenter(view: viewController)
         let interactor = DetailInteractor(presenter: presenter)
         let router = DetailRouter(viewController: viewController)

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImageView {
     
-    func downloadedFrom(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func checkingImageInCacheFrom(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         let fileName = url.lastPathComponent
         contentMode = mode
         let path: String? = File.checkFor(file: fileName)
@@ -38,9 +38,9 @@ extension UIImageView {
         }
     }
     
-    func downloadedFrom(link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func getImageFrom(link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
-        downloadedFrom(url: url, contentMode: mode)
+        checkingImageInCacheFrom(url: url, contentMode: mode)
     }
 }
 

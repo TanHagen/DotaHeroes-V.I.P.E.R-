@@ -12,7 +12,7 @@ final class MainViewController: UIViewController, MainViewControllerProtocol {
     
     var presenter: MainPresenterProtocol!
     
-    var collectionView: UICollectionView = {
+    private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         let width: CGFloat = (UIScreen.main.bounds.width - 40)/3
@@ -39,7 +39,7 @@ final class MainViewController: UIViewController, MainViewControllerProtocol {
         setCollectionView()
     }
     
-    func setCollectionView() {
+    private func setCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         self.view.addSubview(collectionView)
@@ -58,7 +58,7 @@ final class MainViewController: UIViewController, MainViewControllerProtocol {
         }
     }
     
-    func setNavigation() {
+    private func setNavigation() {
         navigationItem.title = "Dota2 Heroes"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteHeroes))

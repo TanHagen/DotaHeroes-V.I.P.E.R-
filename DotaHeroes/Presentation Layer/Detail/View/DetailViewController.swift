@@ -12,48 +12,66 @@ final class DetailViewController: UIViewController, DetailViewControllerProtocol
     
     var presenter: DetailPresenterProtocol!
     
-    let attackType = "Тип атаки: "
-    let primmaryAttribute = "Главный аттрибут: "
-    
-    var heroImageLogo: UIImageView = {
+    private var heroImageLogo: UIImageView = {
         let heroImageLogo = UIImageView()
         return heroImageLogo
     }()
     
-    var heroImageBig: UIImageView = {
+    private var heroImageBig: UIImageView = {
         let heroImageBig = UIImageView()
         heroImageBig.contentMode = .scaleToFill
         return heroImageBig
     }()
     
-    var nameLabel: UILabel = {
+    private var nameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
         nameLabel.textAlignment = .center
         return nameLabel
     }()
     
-    var attackTypeLabel: UILabel = {
+    private var attackTypeLabel: UILabel = {
         let attackTypeLabel = UILabel()
         attackTypeLabel.font = .systemFont(ofSize: 17)
         attackTypeLabel.textAlignment = .center
         return attackTypeLabel
     }()
     
-    var primmaryAttributeLabel: UILabel = {
+    private var primmaryAttributeLabel: UILabel = {
         let primmaryAttributeLabel = UILabel()
         primmaryAttributeLabel.font = .systemFont(ofSize: 17)
         primmaryAttributeLabel.textAlignment = .center
         return primmaryAttributeLabel
     }()
     
+    private let choosenHero: Hero
+    
+    init(hero: Hero) {
+        choosenHero = hero
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.8724230528, green: 0.9164030552, blue: 0.9663124681, alpha: 1)
-        variablesConfigure()
+        
+        setHeroCharacteristics()
+        setConstraints()
     }
     
-    func variablesConfigure() {
+    private func setHeroCharacteristics() {
+        self.heroImageBig.getImageFrom(link: choosenHero.imageLink)
+        self.heroImageLogo.getImageFrom(link: choosenHero.iconLink)
+        self.nameLabel.text = choosenHero.localizedName
+        self.attackTypeLabel.text = choosenHero.attackType.rawValue
+        self.primmaryAttributeLabel.text = choosenHero.primaryAttribute.rawValue
+    }
+    
+    private func setConstraints() {
         
         self.view.addSubview(heroImageBig)
         
@@ -97,19 +115,5 @@ final class DetailViewController: UIViewController, DetailViewControllerProtocol
             make.width.equalToSuperview()
             make.height.equalTo(30)
         }
-    }
-    
-    func updateView(hero: Hero) {
-        
-        heroImageBig.downloadedFrom(link: hero.imageLink)
-        heroImageLogo.downloadedFrom(link: hero.iconLink)
-        nameLabel.text = hero.localizedName
-        attackTypeLabel.text = hero.attackType.rawValue
-        primmaryAttributeLabel.text = hero.primaryAttribute.rawValue
-    }
-    
-    deinit {
-        let file = (#file as NSString).lastPathComponent
-        print("\(file) deinit")
     }
 }

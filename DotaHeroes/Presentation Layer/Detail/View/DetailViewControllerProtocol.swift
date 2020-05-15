@@ -10,6 +10,5 @@ import Foundation
 
 protocol DetailViewControllerProtocol: class {
 
-    func updateView(hero: Hero)
     
 }

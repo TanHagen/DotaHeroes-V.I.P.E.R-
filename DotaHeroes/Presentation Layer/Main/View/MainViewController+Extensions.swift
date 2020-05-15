@@ -15,7 +15,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let heroesIndex = heroesArray[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroCollectionViewCell.reusableIdentifier, for: indexPath) as! HeroCollectionViewCell
-        cell.heroImage.downloadedFrom(link: heroesIndex.imageLink)
+        cell.heroImage.getImageFrom(link: heroesIndex.imageLink)
         cell.nameLabel.text = heroesIndex.localizedName
         
         return cell

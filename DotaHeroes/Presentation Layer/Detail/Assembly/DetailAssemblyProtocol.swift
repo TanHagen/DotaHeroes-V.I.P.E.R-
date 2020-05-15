@@ -10,5 +10,5 @@ import Foundation
 
 protocol DetailAssemblyProtocol {
     
-    static func makeDetailAssembly() -> DetailViewController
+    static func makeDetailAssembly(hero: Hero) -> DetailViewController
 }
