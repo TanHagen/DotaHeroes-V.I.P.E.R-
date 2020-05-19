@@ -9,6 +9,7 @@
 import Foundation
 
 enum APIError: Error {
+    
     case decodingError
     case invalidResponse
     case error(Error)

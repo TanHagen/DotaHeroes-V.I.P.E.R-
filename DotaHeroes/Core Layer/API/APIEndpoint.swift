@@ -16,5 +16,4 @@ protocol APIEndpoint: URLRequestConvertible {
     var path: String { get }
     
     func asURLRequest() throws -> URLRequest
-    
 }

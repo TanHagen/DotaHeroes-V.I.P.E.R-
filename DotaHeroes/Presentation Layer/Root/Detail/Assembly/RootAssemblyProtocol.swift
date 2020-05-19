@@ -1,5 +1,5 @@
 //
-//  MainAssemblyProtocol.swift
+//  DetailAssemblyProtocol.swift
 //  DotaHeroes
 //
 //  Created by Антон Зайцев on 13.05.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MainAssemblyProtocol {
+protocol RootAssemblyProtocol {
     
-    func makeMainAssembly() -> UIViewController
+    func makeRootAssembly() -> UIViewController
 }

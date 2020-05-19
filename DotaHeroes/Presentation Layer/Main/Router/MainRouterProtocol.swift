@@ -6,9 +6,11 @@
 //  Copyright © 2020 Антон Зайцев. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol MainRouterProtocol: class {
+    
+    var view: UIViewController? { get set }
     
     func goToDetailViewController(hero: Hero)
 }

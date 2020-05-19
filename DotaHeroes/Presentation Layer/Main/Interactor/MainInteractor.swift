@@ -12,17 +12,30 @@ final class MainInteractor: MainInteractorProtocol {
     
     private var heroService: HeroesServiceProtocol
     
-    weak var presenter: MainPresenterProtocol!
+    weak var presenter: MainPresenterProtocol?
 
-    required init(presenter: MainPresenterProtocol, service: HeroesServiceProtocol) {
-        self.presenter = presenter
+    var heroesArray = [Hero]()
+    
+    init(service: HeroesServiceProtocol) {
         self.heroService = service
     }
     
-    func getHeroesData(completion: @escaping (Result<[Hero], APIError>) -> Void) {
+    func getHeroesData(completion: @escaping (MainPresenter.Action) -> Void) {
         
-        heroService.getHeroes { (result) in
-            completion(result)
+        heroService.getHeroes { [weak self] (result) in
+        guard let self = self else { return }
+            switch result {
+            case .success(let heroes):
+                self.heroesArray = heroes
+                completion(.reloadData)
+            case .failure(let error):
+                print(ConstantsString.errorInFunction, error.localizedDescription)
+            }
         }
+    }
+    
+    func deleteHeroesAlert(completion: @escaping (MainPresenter.Action) -> Void) {
+        self.heroesArray.removeAll()
+        completion(.reloadData)
     }
 }

@@ -6,22 +6,28 @@
 //  Copyright © 2020 Антон Зайцев. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MainAssembly: MainAssemblyProtocol {
+    
+    let dependency: MainDependency
+    
+    init(dependency: MainDependency) {
+        self.dependency = dependency
+    }
 
-    static func makeMainAssembly() -> MainViewController {
+    func makeMainAssembly() -> UIViewController {
         
-        let httpClient = HTTPClient()
-        let service = HeroesService(httpClient: httpClient)
         let viewController = MainViewController()
-        let presenter = MainPresenter(view: viewController)
-        let interactor = MainInteractor(presenter: presenter, service: service)
-        let router = MainRouter(viewController: viewController)
+        let interactor: MainInteractorProtocol = MainInteractor(service: dependency.heroService)
+        let router: MainRouterProtocol = MainRouter()
+        let presenter: MainPresenterProtocol = MainPresenter(view: viewController, interactor: interactor, router: router)
+        
         viewController.presenter = presenter
-        presenter.interactor = interactor
-        presenter.router = router
+        interactor.presenter = presenter
+        router.view = viewController
         
         return viewController
     }
 }
+

@@ -14,17 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let appDependency = AppDependency.shared
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-
-        let mainViewController = MainAssembly.makeMainAssembly()
-        var navigationController: UINavigationController!
-        navigationController = UINavigationController(rootViewController: mainViewController)
-        navigationController.navigationBar.tintColor = .white
-        navigationController.navigationBar.barTintColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
-        navigationController.navigationBar.barStyle = .black
-        window?.rootViewController = navigationController
+        
+        let rootViewController = RootAssembly(dependency: appDependency).makeRootAssembly()
+        window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
+        
         return true
     }
 

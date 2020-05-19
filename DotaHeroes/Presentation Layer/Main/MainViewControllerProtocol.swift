@@ -9,5 +9,7 @@
 import UIKit
 
 protocol MainViewControllerProtocol: class {
+    
     func getHeroesData()
+    func reloadData()
 }

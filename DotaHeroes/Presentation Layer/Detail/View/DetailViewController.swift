@@ -10,6 +10,8 @@ import UIKit
 
 final class DetailViewController: UIViewController, DetailViewControllerProtocol {
     
+    // MARK: - Properties
+    
     var presenter: DetailPresenterProtocol!
     
     private var heroImageLogo: UIImageView = {
@@ -19,7 +21,7 @@ final class DetailViewController: UIViewController, DetailViewControllerProtocol
     
     private var heroImageBig: UIImageView = {
         let heroImageBig = UIImageView()
-        heroImageBig.contentMode = .scaleToFill
+        heroImageBig.contentMode = .scaleAspectFit
         return heroImageBig
     }()
     
@@ -55,6 +57,8 @@ final class DetailViewController: UIViewController, DetailViewControllerProtocol
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.8724230528, green: 0.9164030552, blue: 0.9663124681, alpha: 1)
@@ -63,13 +67,7 @@ final class DetailViewController: UIViewController, DetailViewControllerProtocol
         setConstraints()
     }
     
-    private func setHeroCharacteristics() {
-        self.heroImageBig.getImageFrom(link: choosenHero.imageLink)
-        self.heroImageLogo.getImageFrom(link: choosenHero.iconLink)
-        self.nameLabel.text = choosenHero.localizedName
-        self.attackTypeLabel.text = choosenHero.attackType.rawValue
-        self.primmaryAttributeLabel.text = choosenHero.primaryAttribute.rawValue
-    }
+    // MARK: - Layout
     
     private func setConstraints() {
         
@@ -115,5 +113,13 @@ final class DetailViewController: UIViewController, DetailViewControllerProtocol
             make.width.equalToSuperview()
             make.height.equalTo(30)
         }
+    }
+    
+    private func setHeroCharacteristics() {
+        self.heroImageBig.getImageFrom(link: choosenHero.imageLink)
+        self.heroImageLogo.getImageFrom(link: choosenHero.iconLink)
+        self.nameLabel.text = choosenHero.localizedName
+        self.attackTypeLabel.text = choosenHero.attackType.rawValue
+        self.primmaryAttributeLabel.text = choosenHero.primaryAttribute.rawValue
     }
 }

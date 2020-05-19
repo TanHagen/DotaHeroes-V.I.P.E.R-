@@ -10,10 +10,5 @@ import UIKit
 
 final class DetailRouter: DetailRouterProtocol {
     
-    weak var viewController: UIViewController!
-    
-    init(viewController: UIViewController) {
-        self.viewController = viewController
-    }
-    
+    weak var view: UIViewController?
 }

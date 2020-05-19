@@ -9,22 +9,37 @@
 import Foundation
 
 final class MainPresenter: MainPresenterProtocol {
-
-    private weak var view: MainViewControllerProtocol?
-    var router: MainRouterProtocol!
-    var interactor: MainInteractorProtocol!
     
-    init(view: MainViewControllerProtocol) {
-        self.view = view
+    enum Action {
+        case reloadData
     }
     
-    func getHeroesData(completion: @escaping ([Hero]) -> Void) {
-        interactor.getHeroesData { (result) in
-            switch result {
-            case let .success(heroes):
-                completion(heroes)
-            case let .failure(error):
-                print("Ошибка при получении данных о героях", error.localizedDescription)
+    private weak var view: MainViewControllerProtocol?
+    var router: MainRouterProtocol
+    var interactor: MainInteractorProtocol
+    
+    init(view: MainViewControllerProtocol, interactor: MainInteractorProtocol, router: MainRouterProtocol) {
+        self.view = view
+        self.interactor = interactor
+        self.router = router
+    }
+    
+    func prepareForFetch() {
+        interactor.getHeroesData { (action) in
+            guard let view = self.view else { return }
+
+            if case .reloadData = action {
+                view.reloadData()
+            }
+        }
+    }
+    
+    func prepareToDelete() {
+        interactor.deleteHeroesAlert { (action) in
+            guard let view = self.view else { return }
+            
+            if case .reloadData = action {
+                view.reloadData()
             }
         }
     }
@@ -32,5 +47,4 @@ final class MainPresenter: MainPresenterProtocol {
     func goToDetailViewControllerWith(hero: Hero) {
         self.router.goToDetailViewController(hero: hero)
     }
-
 }

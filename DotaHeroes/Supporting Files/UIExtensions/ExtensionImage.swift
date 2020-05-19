@@ -10,37 +10,39 @@ import UIKit
 
 extension UIImageView {
     
-    func checkingImageInCacheFrom(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func getImageFrom(link: String) {
+        guard let url = URL(string: link) else { return }
+        checkImageInCacheFrom(url: url)
+    }
+    
+    func checkImageInCacheFrom(url: URL) {
         let fileName = url.lastPathComponent
-        contentMode = mode
-        let path: String? = File.checkFor(file: fileName)
-        if path == nil {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                guard
-                    let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                    let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                    let data = data, error == nil,
-                    let image = UIImage(data: data)
-                    else { return }
-                DispatchQueue.main.async() {
-                    self.image = image
-                    do {
-                        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-                        let fileURL = documentsURL.appendingPathComponent("\(fileName)")
-                        if let pngImageData = image.pngData() {
-                            try pngImageData.write(to: fileURL, options: .atomic)
-                        }
-                    } catch { }
-                }
-                }.resume()
+        if let path = File.checkFor(file: fileName) {
+            self.image = UIImage(contentsOfFile: path)
         } else {
-            self.image = UIImage(contentsOfFile: "\(path!)")
+            loadImageFrom(url: url, fileName: fileName)
         }
     }
     
-    func getImageFrom(link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        guard let url = URL(string: link) else { return }
-        checkingImageInCacheFrom(url: url, contentMode: mode)
+    func loadImageFrom(url: URL, fileName: String) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+        guard
+            let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+            let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+            let data = data, error == nil,
+            let image = UIImage(data: data)
+            else { return }
+        DispatchQueue.main.async() {
+            self.image = image
+            do {
+                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+                let fileURL = documentsURL?.appendingPathComponent("\(fileName)")
+                if let pngImageData = image.pngData(), let fileURL = fileURL {
+                    try pngImageData.write(to: fileURL, options: .atomic)
+                }
+            } catch { }
+        }
+        }.resume()
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  DetailInteractor.swift
+//  DetailViewControllerProtocol.swift
 //  DotaHeroes
 //
 //  Created by Антон Зайцев on 09.05.2020.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-final class DetailInteractor: DetailInteractorProtocol {
-    
-    weak var presenter: DetailPresenterProtocol?
+protocol RootViewControllerProtocol: class {
+
 }

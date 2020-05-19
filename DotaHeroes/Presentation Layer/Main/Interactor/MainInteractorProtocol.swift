@@ -10,6 +10,9 @@ import Foundation
 
 protocol MainInteractorProtocol: class {
     
-    func getHeroesData(completion: @escaping (Result<[Hero], APIError>) -> Void)
+    var presenter: MainPresenterProtocol? { get set }
+    var heroesArray: [Hero] { get set }
     
+    func getHeroesData(completion: @escaping (MainPresenter.Action) -> Void)
+    func deleteHeroesAlert(completion: @escaping (MainPresenter.Action) -> Void)
 }

@@ -10,15 +10,10 @@ import UIKit
 
 final class MainRouter: MainRouterProtocol {
     
-    weak var viewController: UIViewController!
-    
-    init(viewController: UIViewController) {
-        self.viewController = viewController
-    }
+    weak var view: UIViewController?
     
     func goToDetailViewController(hero: Hero) {
         let detailViewController = DetailAssembly.makeDetailAssembly(hero: hero)
-        viewController.navigationController?.pushViewController(detailViewController, animated: true)
+        view?.navigationController?.pushViewController(detailViewController, animated: true)
     }
-    
 }

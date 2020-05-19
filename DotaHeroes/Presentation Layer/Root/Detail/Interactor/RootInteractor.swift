@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class DetailInteractor: DetailInteractorProtocol {
+final class RootInteractor: RootInteractorProtocol {
     
-    weak var presenter: DetailPresenterProtocol?
+    weak var presenter: RootPresenterProtocol?
 }

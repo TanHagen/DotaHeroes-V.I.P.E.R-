@@ -15,7 +15,6 @@ struct Hero {
     var primaryAttribute: HeroSkills.Attribute
     var attackType: HeroSkills.TypeAttack
     var iconLink: String
-
 }
 
 enum HeroSkills {
@@ -32,7 +31,6 @@ enum HeroSkills {
         case ranged = "Дальний бой"
         case none = "-"
     }
-    
 }
 
 

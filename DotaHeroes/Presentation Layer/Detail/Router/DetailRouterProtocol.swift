@@ -6,8 +6,9 @@
 //  Copyright © 2020 Антон Зайцев. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol DetailRouterProtocol: class {
     
+    var view: UIViewController? { get set }
 }

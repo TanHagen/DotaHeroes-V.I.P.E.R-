@@ -1,14 +1,14 @@
 //
-//  DetailInteractor.swift
+//  DetailRouter.swift
 //  DotaHeroes
 //
 //  Created by Антон Зайцев on 09.05.2020.
 //  Copyright © 2020 Антон Зайцев. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-final class DetailInteractor: DetailInteractorProtocol {
+final class RootRouter: RootRouterProtocol {
     
-    weak var presenter: DetailPresenterProtocol?
+    weak var view: UIViewController?
 }

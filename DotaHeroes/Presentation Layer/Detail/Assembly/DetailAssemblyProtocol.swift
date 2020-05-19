@@ -6,9 +6,9 @@
 //  Copyright © 2020 Антон Зайцев. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol DetailAssemblyProtocol {
     
-    static func makeDetailAssembly(hero: Hero) -> DetailViewController
+    static func makeDetailAssembly(hero: Hero) -> UIViewController
 }

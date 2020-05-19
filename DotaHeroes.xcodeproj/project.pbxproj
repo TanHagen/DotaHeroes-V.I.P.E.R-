@@ -34,8 +34,25 @@
 		962B2D62246718E200CDD0E4 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B2D61246718E200CDD0E4 /* DetailRouter.swift */; };
 		962B2D642467192000CDD0E4 /* DetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B2D632467192000CDD0E4 /* DetailRouterProtocol.swift */; };
 		962B2D6724671A8100CDD0E4 /* DetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B2D6624671A8100CDD0E4 /* DetailViewControllerProtocol.swift */; };
+		964197B92471CA0D005AA662 /* ConstantsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197B82471CA0D005AA662 /* ConstantsString.swift */; };
+		964197BB24725BEE005AA662 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964197BA24725BEE005AA662 /* AppDependency.swift */; };
 		968BDDB7246B487D0041D0BD /* MainAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BDDB6246B487D0041D0BD /* MainAssemblyProtocol.swift */; };
 		968BDDBA246B48C30041D0BD /* DetailAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BDDB9246B48C30041D0BD /* DetailAssemblyProtocol.swift */; };
+		96B6E37B2473164A0056622A /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527AF2473104B00A92579 /* RootAssembly.swift */; };
+		96B6E37C2473164C0056622A /* RootAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527AE2473104B00A92579 /* RootAssemblyProtocol.swift */; };
+		96B6E3852473165B0056622A /* RootPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527B12473104B00A92579 /* RootPresenterProtocol.swift */; };
+		96B6E3862473165B0056622A /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527B22473104B00A92579 /* RootPresenter.swift */; };
+		96B6E3872473165B0056622A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527B42473104B00A92579 /* RootViewController.swift */; };
+		96B6E3882473165B0056622A /* RootViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527B52473104B00A92579 /* RootViewControllerProtocol.swift */; };
+		96B6E3892473165B0056622A /* RootInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527B72473104B00A92579 /* RootInteractorProtocol.swift */; };
+		96B6E38A2473165B0056622A /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527B82473104B00A92579 /* RootInteractor.swift */; };
+		96B6E38B2473165B0056622A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527BA2473104B00A92579 /* RootRouter.swift */; };
+		96B6E38C2473165B0056622A /* RootRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527BB2473104B00A92579 /* RootRouterProtocol.swift */; };
+		96B6E38E2473D13A0056622A /* DetailDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6E38D2473D13A0056622A /* DetailDependency.swift */; };
+		96B6E3902473D18A0056622A /* MainDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6E38F2473D18A0056622A /* MainDependency.swift */; };
+		96B6E3922473D19F0056622A /* RootDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6E3912473D19F0056622A /* RootDependency.swift */; };
+		96B6E3942473D1C00056622A /* RootBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6E3932473D1C00056622A /* RootBuilders.swift */; };
+		96B6E3962473D2940056622A /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6E3952473D2940056622A /* Builders.swift */; };
 		96C6950A2468A7FA000DC236 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C695092468A7FA000DC236 /* HTTPClient.swift */; };
 		96C6950C2468A81F000DC236 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C6950B2468A81F000DC236 /* URLSession+Extensions.swift */; };
 		96C6950E2468A84B000DC236 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C6950D2468A84B000DC236 /* API.swift */; };
@@ -77,8 +94,25 @@
 		962B2D61246718E200CDD0E4 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		962B2D632467192000CDD0E4 /* DetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterProtocol.swift; sourceTree = "<group>"; };
 		962B2D6624671A8100CDD0E4 /* DetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		964197B82471CA0D005AA662 /* ConstantsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsString.swift; sourceTree = "<group>"; };
+		964197BA24725BEE005AA662 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		966527AE2473104B00A92579 /* RootAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssemblyProtocol.swift; sourceTree = "<group>"; };
+		966527AF2473104B00A92579 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		966527B12473104B00A92579 /* RootPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenterProtocol.swift; sourceTree = "<group>"; };
+		966527B22473104B00A92579 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		966527B42473104B00A92579 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		966527B52473104B00A92579 /* RootViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerProtocol.swift; sourceTree = "<group>"; };
+		966527B72473104B00A92579 /* RootInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractorProtocol.swift; sourceTree = "<group>"; };
+		966527B82473104B00A92579 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		966527BA2473104B00A92579 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		966527BB2473104B00A92579 /* RootRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterProtocol.swift; sourceTree = "<group>"; };
 		968BDDB6246B487D0041D0BD /* MainAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssemblyProtocol.swift; sourceTree = "<group>"; };
 		968BDDB9246B48C30041D0BD /* DetailAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssemblyProtocol.swift; sourceTree = "<group>"; };
+		96B6E38D2473D13A0056622A /* DetailDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDependency.swift; sourceTree = "<group>"; };
+		96B6E38F2473D18A0056622A /* MainDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependency.swift; sourceTree = "<group>"; };
+		96B6E3912473D19F0056622A /* RootDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDependency.swift; sourceTree = "<group>"; };
+		96B6E3932473D1C00056622A /* RootBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilders.swift; sourceTree = "<group>"; };
+		96B6E3952473D2940056622A /* Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builders.swift; sourceTree = "<group>"; };
 		96C695092468A7FA000DC236 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		96C6950B2468A81F000DC236 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
 		96C6950D2468A84B000DC236 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -154,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				5FB58E2B20EC57E000541C05 /* AppDelegate.swift */,
+				964197BA24725BEE005AA662 /* AppDependency.swift */,
+				964197B82471CA0D005AA662 /* ConstantsString.swift */,
 				96F8A175246762FA00291663 /* UIExtensions */,
 				5FB58E3520EC57E400541C05 /* Assets.xcassets */,
 				5FB58E3720EC57E400541C05 /* LaunchScreen.storyboard */,
@@ -277,6 +313,74 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		966527AB2473101200A92579 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				966527AC2473104B00A92579 /* Detail */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		966527AC2473104B00A92579 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				966527AD2473104B00A92579 /* Assembly */,
+				966527B02473104B00A92579 /* Presenter */,
+				966527B32473104B00A92579 /* View */,
+				966527B62473104B00A92579 /* Interactor */,
+				966527B92473104B00A92579 /* Router */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		966527AD2473104B00A92579 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				966527AF2473104B00A92579 /* RootAssembly.swift */,
+				966527AE2473104B00A92579 /* RootAssemblyProtocol.swift */,
+				96B6E3952473D2940056622A /* Builders.swift */,
+				96B6E3932473D1C00056622A /* RootBuilders.swift */,
+				96B6E3912473D19F0056622A /* RootDependency.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		966527B02473104B00A92579 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				966527B12473104B00A92579 /* RootPresenterProtocol.swift */,
+				966527B22473104B00A92579 /* RootPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		966527B32473104B00A92579 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				966527B42473104B00A92579 /* RootViewController.swift */,
+				966527B52473104B00A92579 /* RootViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		966527B62473104B00A92579 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				966527B72473104B00A92579 /* RootInteractorProtocol.swift */,
+				966527B82473104B00A92579 /* RootInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		966527B92473104B00A92579 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				966527BA2473104B00A92579 /* RootRouter.swift */,
+				966527BB2473104B00A92579 /* RootRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		96876CB724699E9900E0FC6E /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +397,7 @@
 			children = (
 				962B2D512466F67600CDD0E4 /* MainAssembly.swift */,
 				968BDDB6246B487D0041D0BD /* MainAssemblyProtocol.swift */,
+				96B6E38F2473D18A0056622A /* MainDependency.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -302,6 +407,7 @@
 			children = (
 				962B2D562467151800CDD0E4 /* DetailAssembly.swift */,
 				968BDDB9246B48C30041D0BD /* DetailAssemblyProtocol.swift */,
+				96B6E38D2473D13A0056622A /* DetailDependency.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -319,6 +425,7 @@
 		96F8A17424674D9C00291663 /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				966527AB2473101200A92579 /* Root */,
 				5F94EDF920EE44B000477AAD /* Main */,
 				5F3A84F521AD9CBC00308896 /* Detail */,
 			);
@@ -449,34 +556,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2275DA20EC5C660023AAEC /* Hero.swift in Sources */,
+				96B6E3852473165B0056622A /* RootPresenterProtocol.swift in Sources */,
+				96B6E38C2473165B0056622A /* RootRouterProtocol.swift in Sources */,
 				962B2D5D2467178F00CDD0E4 /* DetailInteractor.swift in Sources */,
 				5FB58E2E20EC57E000541C05 /* MainViewController.swift in Sources */,
 				5F3BD42120EC809A004ADCFC /* ExtensionImage.swift in Sources */,
 				962B2D502466EA0E00CDD0E4 /* MainViewController+Extensions.swift in Sources */,
 				96C6950A2468A7FA000DC236 /* HTTPClient.swift in Sources */,
 				5F3A84FF21ADA01D00308896 /* MainInteractorProtocol.swift in Sources */,
+				96B6E3882473165B0056622A /* RootViewControllerProtocol.swift in Sources */,
 				5F3A84F921AD9E8200308896 /* MainViewControllerProtocol.swift in Sources */,
+				96B6E3942473D1C00056622A /* RootBuilders.swift in Sources */,
+				96B6E38B2473165B0056622A /* RootRouter.swift in Sources */,
 				962B2D592467172D00CDD0E4 /* DetailPresenterProtocol.swift in Sources */,
 				5F3A84F721AD9E3900308896 /* MainPresenterProtocol.swift in Sources */,
+				96B6E3892473165B0056622A /* RootInteractorProtocol.swift in Sources */,
 				962B2D62246718E200CDD0E4 /* DetailRouter.swift in Sources */,
+				964197B92471CA0D005AA662 /* ConstantsString.swift in Sources */,
+				96B6E3902473D18A0056622A /* MainDependency.swift in Sources */,
 				96C695102468A865000DC236 /* API+Heroes.swift in Sources */,
 				968BDDB7246B487D0041D0BD /* MainAssemblyProtocol.swift in Sources */,
 				5F2275DC20EC5DE60023AAEC /* HeroesService.swift in Sources */,
 				96C695142468A8A5000DC236 /* APIError.swift in Sources */,
+				96B6E3872473165B0056622A /* RootViewController.swift in Sources */,
 				96C6950C2468A81F000DC236 /* URLSession+Extensions.swift in Sources */,
+				96B6E3862473165B0056622A /* RootPresenter.swift in Sources */,
 				96C6950E2468A84B000DC236 /* API.swift in Sources */,
 				5F3A84F221AD9BE100308896 /* MainRouter.swift in Sources */,
+				96B6E37C2473164C0056622A /* RootAssemblyProtocol.swift in Sources */,
+				96B6E3962473D2940056622A /* Builders.swift in Sources */,
 				968BDDBA246B48C30041D0BD /* DetailAssemblyProtocol.swift in Sources */,
 				5FB58E4120EC59BE00541C05 /* HeroCollectionViewCell.swift in Sources */,
 				5FB58E2C20EC57E000541C05 /* AppDelegate.swift in Sources */,
 				5F3A84FB21AD9FBE00308896 /* MainRouterProtocol.swift in Sources */,
 				962B2D572467151800CDD0E4 /* DetailAssembly.swift in Sources */,
+				96B6E38A2473165B0056622A /* RootInteractor.swift in Sources */,
 				962B2D5F246717B300CDD0E4 /* DetailInteractorProtocol.swift in Sources */,
+				96B6E3922473D19F0056622A /* RootDependency.swift in Sources */,
 				5F3A84F021AD9BD200308896 /* MainPresenter.swift in Sources */,
 				5F3A84F421AD9CAD00308896 /* DetailPresenter.swift in Sources */,
 				962B2D642467192000CDD0E4 /* DetailRouterProtocol.swift in Sources */,
+				96B6E38E2473D13A0056622A /* DetailDependency.swift in Sources */,
 				962B2D6724671A8100CDD0E4 /* DetailViewControllerProtocol.swift in Sources */,
+				96B6E37B2473164A0056622A /* RootAssembly.swift in Sources */,
 				962B2D522466F67600CDD0E4 /* MainAssembly.swift in Sources */,
+				964197BB24725BEE005AA662 /* AppDependency.swift in Sources */,
 				96C695122468A889000DC236 /* APIEndpoint.swift in Sources */,
 				5F3A84FD21ADA00D00308896 /* MainInteractor.swift in Sources */,
 				5F3BD42320EC8A26004ADCFC /* DetailViewController.swift in Sources */,

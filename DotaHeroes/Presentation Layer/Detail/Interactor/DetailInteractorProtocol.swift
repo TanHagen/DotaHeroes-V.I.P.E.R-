@@ -10,4 +10,5 @@ import Foundation
 
 protocol DetailInteractorProtocol: class {
     
+    var presenter: DetailPresenterProtocol? { get set }
 }

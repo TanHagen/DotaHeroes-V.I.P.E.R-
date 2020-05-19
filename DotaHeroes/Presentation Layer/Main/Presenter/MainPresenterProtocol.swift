@@ -10,10 +10,10 @@ import Foundation
 
 protocol MainPresenterProtocol: class {
     
-    var router: MainRouterProtocol! { set get }
-    var interactor: MainInteractorProtocol! { set get }
+    var router: MainRouterProtocol { get set }
+    var interactor: MainInteractorProtocol { get set }
     
-    func getHeroesData(completion: @escaping ([Hero]) -> Void)
+    func prepareForFetch()
+    func prepareToDelete()
     func goToDetailViewControllerWith(hero: Hero)
-    
 }

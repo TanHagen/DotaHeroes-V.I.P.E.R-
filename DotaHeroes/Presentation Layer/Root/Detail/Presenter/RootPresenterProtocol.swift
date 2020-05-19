@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol DetailPresenterProtocol: class {
+protocol RootPresenterProtocol: class {
     
-    var router: DetailRouterProtocol { set get }
-    var interactor: DetailInteractorProtocol { set get }
+    var router: RootRouterProtocol { set get }
+    var interactor: RootInteractorProtocol { set get }
 }

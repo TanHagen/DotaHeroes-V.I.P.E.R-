@@ -6,19 +6,26 @@
 //  Copyright © 2020 Антон Зайцев. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class DetailAssembly: DetailAssemblyProtocol {
+    
+    let dependency: DetailDependency
+     
+     init(dependency: DetailDependency) {
+         self.dependency = dependency
+     }
 
-    static func makeDetailAssembly(hero: Hero) -> DetailViewController {
-        
+    static func makeDetailAssembly(hero: Hero) -> UIViewController {
+ 
         let viewController = DetailViewController(hero: hero)
-        let presenter = DetailPresenter(view: viewController)
-        let interactor = DetailInteractor(presenter: presenter)
-        let router = DetailRouter(viewController: viewController)
+        let interactor: DetailInteractorProtocol = DetailInteractor()
+        let router: DetailRouterProtocol = DetailRouter()
+        let presenter: DetailPresenterProtocol = DetailPresenter(view: viewController, interactor: interactor, router: router)
+        
         viewController.presenter = presenter
-        presenter.interactor = interactor
-        presenter.router = router
+        interactor.presenter = presenter
+        router.view = viewController
         
         return viewController
     }

@@ -11,11 +11,12 @@ import Foundation
 final class DetailPresenter: DetailPresenterProtocol {
     
     private weak var view: DetailViewControllerProtocol?
-    var router: DetailRouterProtocol!
-    var interactor: DetailInteractorProtocol!
+    var router: DetailRouterProtocol
+    var interactor: DetailInteractorProtocol
     
-    init(view: DetailViewControllerProtocol) {
+    init(view: DetailViewControllerProtocol, interactor: DetailInteractorProtocol, router: DetailRouterProtocol) {
         self.view = view
+        self.interactor = interactor
+        self.router = router
     }
-    
 }

@@ -11,10 +11,9 @@ import UIKit
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if heroesArray.indices.contains(indexPath.row) {
-            
-            let heroesIndex = heroesArray[indexPath.row]
+        if presenter.interactor.heroesArray.indices.contains(indexPath.row) {
+    
+            let heroesIndex = presenter.interactor.heroesArray[indexPath.row]
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeroCollectionViewCell.reusableIdentifier, for: indexPath) as! HeroCollectionViewCell
             cell.heroImage.getImageFrom(link: heroesIndex.imageLink)
@@ -28,12 +27,12 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return heroesArray.count
+        return presenter.interactor.heroesArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let tappedHero = heroesArray[indexPath.row]
+        let tappedHero = presenter.interactor.heroesArray[indexPath.row]
     
         presenter.goToDetailViewControllerWith(hero: tappedHero)
     }
